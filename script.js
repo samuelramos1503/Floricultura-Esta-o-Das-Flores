@@ -37,22 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. INTEGRAÇÃO DOS DESTAQUES DO INSTAGRAM COM O MONTADOR
-  document.querySelectorAll('.highlight-item[data-select-style]').forEach(item => {
-    item.addEventListener('click', () => {
-      const targetStyle = item.getAttribute('data-select-style');
-      selectOptionByValue('step-flores', targetStyle);
-    });
-  });
-
-  document.querySelectorAll('.highlight-item[data-select-occasion]').forEach(item => {
-    item.addEventListener('click', () => {
-      const targetOccasion = item.getAttribute('data-select-occasion');
-      selectOptionByValue('step-ocasiao', targetOccasion);
-    });
-  });
-
-  // 5. ENVIO DO FORMULÁRIO DO MONTADOR PARA O WHATSAPP
+  // 4. ENVIO DO FORMULÁRIO DO MONTADOR PARA O WHATSAPP
   const giftBuilderForm = document.getElementById('giftBuilderForm');
   if (giftBuilderForm) {
     giftBuilderForm.addEventListener('submit', (e) => {
