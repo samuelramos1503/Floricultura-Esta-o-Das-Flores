@@ -849,6 +849,14 @@ a {
   padding: 8px;
 }
 
+.img-pos-bottom {
+  object-position: center bottom !important;
+}
+
+.img-pos-top {
+  object-position: center top !important;
+}
+
 .product-card:hover .product-img {
   transform: scale(1.05);
 }
