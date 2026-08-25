@@ -1183,3 +1183,25 @@ a {
   width: 32px;
   height: 32px;
 }
+
+/* ==================== OCULTAR BADGE / DRAWER NETLIFY ==================== */
+#netlify-badge,
+[data-netlify-drawer],
+[data-netlify-badge],
+[class*="netlify-feedback"],
+[class*="netlify-drawer"],
+iframe[id*="netlify"],
+iframe[title*="Netlify"],
+iframe[src*="netlify"],
+div[data-netlify-drawer-wrapper],
+a[href*="netlify.com"][class*="badge"],
+div:has(> a[href*="netlify.com"]) {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  z-index: -9999 !important;
+}
