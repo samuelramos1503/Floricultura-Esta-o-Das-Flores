@@ -1124,3 +1124,9 @@ button {
     height: 165px;
   }
 }
+
+/* Enquadramento Focado na Base (Vaso, Laço e Embalagem) para Orquídeas */
+#orquideas .cat-featured-img-wrap img,
+#orquideas .cat-item-img-wrap img {
+  object-position: bottom center !important;
+}
