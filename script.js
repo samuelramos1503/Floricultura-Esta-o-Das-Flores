@@ -110,15 +110,42 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  // --- 5. SLIDESHOW AUTOMÁTICO SUAVE DA LOJA FÍSICA ---
+  // --- 5. SLIDESHOW AUTOMÁTICO DA LOJA FÍSICA COM MINIATURAS SINCRONIZADAS ---
   const storeSlides = document.querySelectorAll('.store-slide');
+  const storeThumbs = document.querySelectorAll('.store-thumb-btn');
   if (storeSlides.length > 0) {
     let currentStoreSlide = 0;
-    setInterval(() => {
-      storeSlides[currentStoreSlide].classList.remove('active');
-      currentStoreSlide = (currentStoreSlide + 1) % storeSlides.length;
-      storeSlides[currentStoreSlide].classList.add('active');
-    }, 3200);
+    let storeTimer = null;
+
+    function goToStoreSlide(index) {
+      storeSlides.forEach((s, i) => s.classList.toggle('active', i === index));
+      storeThumbs.forEach((t, i) => t.classList.toggle('active', i === index));
+      currentStoreSlide = index;
+    }
+
+    function nextStoreSlide() {
+      let next = (currentStoreSlide + 1) % storeSlides.length;
+      goToStoreSlide(next);
+    }
+
+    function startStoreAuto() {
+      storeTimer = setInterval(nextStoreSlide, 3500);
+    }
+
+    function stopStoreAuto() {
+      if (storeTimer) clearInterval(storeTimer);
+    }
+
+    storeThumbs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        stopStoreAuto();
+        const idx = parseInt(btn.getAttribute('data-index'));
+        goToStoreSlide(idx);
+        startStoreAuto();
+      });
+    });
+
+    startStoreAuto();
   }
 
 
