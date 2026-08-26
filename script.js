@@ -121,4 +121,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3200);
   }
 
+
+  // --- 6. CARROSSEL DE AVALIAÇÕES COM SETAS ---
+  const revTrack = document.getElementById('reviewsTrack');
+  const revPrev = document.getElementById('revPrev');
+  const revNext = document.getElementById('revNext');
+
+  if (revTrack && revPrev && revNext) {
+    revNext.addEventListener('click', () => {
+      revTrack.scrollBy({ left: 340, behavior: 'smooth' });
+    });
+    revPrev.addEventListener('click', () => {
+      revTrack.scrollBy({ left: -340, behavior: 'smooth' });
+    });
+  }
+
 });
