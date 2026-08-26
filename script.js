@@ -149,18 +149,69 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  // --- 6. CARROSSEL DE AVALIAÇÕES COM SETAS ---
+  // --- 6. CARROSSEL DE AVALIAÇÕES COM AUTO-ROLAGEM E SETAS ---
   const revTrack = document.getElementById('reviewsTrack');
   const revPrev = document.getElementById('revPrev');
   const revNext = document.getElementById('revNext');
 
   if (revTrack && revPrev && revNext) {
+    let revAutoTimer = null;
+
+    function getCardWidth() {
+      const firstCard = revTrack.querySelector('.review-slide-card');
+      return firstCard ? firstCard.offsetWidth + 24 : 350;
+    }
+
+    function nextReview() {
+      const cardWidth = getCardWidth();
+      const maxScroll = revTrack.scrollWidth - revTrack.clientWidth;
+      if (revTrack.scrollLeft >= maxScroll - 20) {
+        revTrack.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        revTrack.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      }
+    }
+
+    function prevReview() {
+      const cardWidth = getCardWidth();
+      if (revTrack.scrollLeft <= 20) {
+        revTrack.scrollTo({ left: revTrack.scrollWidth, behavior: 'smooth' });
+      } else {
+        revTrack.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+      }
+    }
+
+    function startRevAuto() {
+      if (!revAutoTimer) {
+        revAutoTimer = setInterval(nextReview, 4000);
+      }
+    }
+
+    function stopRevAuto() {
+      if (revAutoTimer) {
+        clearInterval(revAutoTimer);
+        revAutoTimer = null;
+      }
+    }
+
     revNext.addEventListener('click', () => {
-      revTrack.scrollBy({ left: 340, behavior: 'smooth' });
+      stopRevAuto();
+      nextReview();
+      startRevAuto();
     });
+
     revPrev.addEventListener('click', () => {
-      revTrack.scrollBy({ left: -340, behavior: 'smooth' });
+      stopRevAuto();
+      prevReview();
+      startRevAuto();
     });
+
+    revTrack.addEventListener('mouseenter', stopRevAuto);
+    revTrack.addEventListener('mouseleave', startRevAuto);
+    revTrack.addEventListener('touchstart', stopRevAuto, { passive: true });
+    revTrack.addEventListener('touchend', startRevAuto, { passive: true });
+
+    startRevAuto();
   }
 
 

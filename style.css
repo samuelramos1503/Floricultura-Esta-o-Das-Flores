@@ -1549,3 +1549,13 @@ button {
     min-height: 90px;
   }
 }
+
+
+/* ==================== INTRODUÇÃO DO CATÁLOGO ==================== */
+.section-intro {
+  padding: 4.5rem 0 1.5rem;
+  background-color: var(--color-bg);
+}
+.section-intro .section-header {
+  margin-bottom: 0;
+}
