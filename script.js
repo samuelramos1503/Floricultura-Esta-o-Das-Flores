@@ -109,4 +109,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
+  // --- 5. SLIDESHOW AUTOMÁTICO SUAVE DA LOJA FÍSICA ---
+  const storeSlides = document.querySelectorAll('.store-slide');
+  if (storeSlides.length > 0) {
+    let currentStoreSlide = 0;
+    setInterval(() => {
+      storeSlides[currentStoreSlide].classList.remove('active');
+      currentStoreSlide = (currentStoreSlide + 1) % storeSlides.length;
+      storeSlides[currentStoreSlide].classList.add('active');
+    }, 3200);
+  }
+
 });
