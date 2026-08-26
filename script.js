@@ -163,4 +163,72 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+
+  // --- 6. MONTE SEU PRESENTE PERSONALIZADO (INTERACTIVE BUILDER) ---
+  let selectedOcasiao = 'Aniversário';
+  let selectedEstilo = 'Buquê de Rosas Nobres';
+  let selectedMimos = [];
+
+  const summaryText = document.getElementById('summaryText');
+  const sendBtn = document.getElementById('builderSendBtn');
+
+  function updateBuilderWhatsApp() {
+    let summaryParts = [selectedOcasiao, selectedEstilo];
+    if (selectedMimos.length > 0) {
+      summaryParts.push('+ ' + selectedMimos.join(', '));
+    }
+    
+    if (summaryText) {
+      summaryText.textContent = summaryParts.join(' • ');
+    }
+
+    let mimosText = selectedMimos.length > 0 ? selectedMimos.join(', ') : 'Nenhum adicional';
+
+    let msg = `Olá! Gostaria de fazer um pedido personalizado na Estação das Flores:\n\n` +
+              `🎂 Ocasião: ${selectedOcasiao}\n` +
+              `🌸 Estilo Principal: ${selectedEstilo}\n` +
+              `🎁 Acompanhamentos: ${mimosText}\n\n` +
+              `Gostaria de ver as opções e valores para entrega!`;
+
+    if (sendBtn) {
+      sendBtn.href = `https://api.whatsapp.com/send/?phone=5531988600761&text=${encodeURIComponent(msg)}`;
+    }
+  }
+
+  // Handle Step 1 (Ocasião)
+  document.querySelectorAll('[data-group="ocasiao"] .builder-option-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-group="ocasiao"] .builder-option-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedOcasiao = btn.getAttribute('data-value');
+      updateBuilderWhatsApp();
+    });
+  });
+
+  // Handle Step 2 (Estilo)
+  document.querySelectorAll('[data-group="estilo"] .builder-option-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-group="estilo"] .builder-option-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedEstilo = btn.getAttribute('data-value');
+      updateBuilderWhatsApp();
+    });
+  });
+
+  // Handle Step 3 (Mimos Multi-selection)
+  document.querySelectorAll('[data-group="mimos"] .builder-option-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active');
+      const val = btn.getAttribute('data-value');
+      if (btn.classList.contains('active')) {
+        if (!selectedMimos.includes(val)) selectedMimos.push(val);
+      } else {
+        selectedMimos = selectedMimos.filter(m => m !== val);
+      }
+      updateBuilderWhatsApp();
+    });
+  });
+
+  updateBuilderWhatsApp();
+
 });

@@ -1411,3 +1411,141 @@ button {
 #orquideas .cat-item-img-wrap img {
   object-position: center center !important;
 }
+
+/* ==================== MONTE SEU PRESENTE PERSONALIZADO (BUILDER) ==================== */
+.builder-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1.5px solid var(--color-primary-border);
+  box-shadow: var(--shadow-md);
+  padding: 3rem 2.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.builder-step {
+  margin-bottom: 2.5rem;
+}
+
+.step-title {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1.2rem;
+}
+
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--color-primary);
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.builder-options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+  gap: 1rem;
+}
+
+.builder-option-btn {
+  background: var(--color-bg);
+  border: 1.5px solid rgba(82, 28, 39, 0.12);
+  border-radius: var(--radius-md);
+  padding: 1.2rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+  min-height: 100px;
+}
+
+.opt-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+  display: block;
+}
+
+.opt-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.builder-option-btn:hover {
+  background: #ffffff;
+  border-color: var(--color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.builder-option-btn.active {
+  background: rgba(82, 28, 39, 0.05);
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 4px 12px rgba(82, 28, 39, 0.15);
+  transform: scale(1.02);
+}
+
+.builder-option-btn.active .opt-label {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+.builder-footer {
+  border-top: 1.5px solid var(--color-primary-border);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.builder-summary-preview {
+  background: var(--color-bg-alt);
+  border: 1px dashed var(--color-accent);
+  padding: 0.8rem 1.8rem;
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.builder-summary-preview strong {
+  color: var(--color-primary);
+}
+
+.builder-cta {
+  width: 100%;
+  max-width: 500px;
+  justify-content: center;
+  padding: 1.1rem 2rem;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .builder-card {
+    padding: 2rem 1.2rem;
+  }
+  .builder-options-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  .builder-option-btn {
+    padding: 1rem 0.5rem;
+    min-height: 90px;
+  }
+}
