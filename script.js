@@ -1,10 +1,10 @@
 // ==========================================================================
-// FLORICULTURA ESTAÇÃO DAS FLORES — SCRIPT INTERATIVO
+// FLORICULTURA ESTAÇÃO DAS FLORES — SCRIPT INTERATIVO (ESKINA FLORES STYLE)
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // --- 1. HERO SLIDER AUTOMÁTICO & TOUCH ---
+  // --- 1. HERO SLIDER AUTOMÁTICO & CONTROLES ---
   const slides = document.querySelectorAll('.hero-slide');
   const dots = document.querySelectorAll('.slider-dot');
   const prevBtn = document.getElementById('sliderPrev');
@@ -65,30 +65,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   startAutoplay();
 
-  // --- 2. FILTROS DO CATÁLOGO ---
-  const filterTabs = document.querySelectorAll('.filter-tab');
-  const prodCards = document.querySelectorAll('.prod-card');
-
-  window.filterCatalog = function(cat) {
-    filterTabs.forEach(tab => {
-      tab.classList.toggle('active', tab.getAttribute('data-filter') === cat);
-    });
-
-    prodCards.forEach(card => {
-      if (cat === 'all' || card.getAttribute('data-cat') === cat) {
-        card.style.display = 'flex';
-      } else {
-        card.style.display = 'none';
-      }
-    });
+  // --- 2. ROLAGEM DOS CARROSSEIS COM SETAS ---
+  window.scrollCarousel = function(catId, direction) {
+    const track = document.getElementById(`track-${catId}`);
+    if (track) {
+      const scrollAmount = 260 * direction;
+      track.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    }
   };
-
-  filterTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const filter = tab.getAttribute('data-filter');
-      window.filterCatalog(filter);
-    });
-  });
 
   // --- 3. MENU MOBILE HAMBURGUER ---
   const burger = document.getElementById('burger');

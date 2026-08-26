@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Floricultura Estação das Flores | Flores, Buquês, Cestas &amp; Noivas em Ipatinga MG</title>
-  <meta name="description" content="Floricultura Estação das Flores em Ipatinga MG (Bairro Canaã). Buquês exclusivos, buquês de noiva, cestas de café da manhã, coroas de homenagem, orquídeas e presentes. Entregas com horário agendado em todo o Vale do Aço. WhatsApp (31) 98860-0761.">
-  <meta name="theme-color" content="#521c27">
+  <meta name="description" content="Floricultura Estação das Flores em Ipatinga MG (Bairro Canaã). Buquês exclusivos, noivas, cestas de café da manhã, coroas de homenagem, orquídeas e mimos com entrega no horário exato. WhatsApp (31) 98860-0761.">
+  <meta name="theme-color" content="#1a090d">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Floricultura Estação das Flores | Ipatinga MG">
-  <meta property="og:description" content="Levando emoções e transformando vidas através das flores. Buquês exclusivos, cestas de café da manhã, noivas e presentes inesquecíveis no Vale do Aço.">
+  <meta property="og:description" content="Levando emoções e transformando vidas através das flores. Buquês exclusivos, cestas de café da manhã e presentes no Vale do Aço.">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:image" content="./assets/logo.jpg">
 
-  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <!-- Google Fonts: Outfit, Plus Jakarta Sans & Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="./style.css?v=3.0">
+  <link rel="stylesheet" href="./style.css?v=4.0">
 </head>
 <body>
 
@@ -53,12 +53,13 @@
       </a>
 
       <nav class="nav" id="nav" aria-label="Navegação principal">
-        <a href="#catalogo" class="nav-link">Catálogo de Flores</a>
+        <a href="#buques" class="nav-link">Buquês</a>
         <a href="#noivas" class="nav-link">Noivas</a>
         <a href="#cestas" class="nav-link">Cestas &amp; Café</a>
-        <a href="#coroas" class="nav-link">Coroas Fúnebres</a>
+        <a href="#coroas" class="nav-link">Coroas</a>
+        <a href="#pelucias" class="nav-link">Kits &amp; Pelúcias</a>
+        <a href="#orquideas" class="nav-link">Orquídeas</a>
         <a href="#loja" class="nav-link">Nossa Loja</a>
-        <a href="#faq" class="nav-link">Dúvidas</a>
         <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Vim+pelo+site+da+Estação+das+Flores+e+gostaria+de+fazer+um+pedido!" target="_blank" rel="noopener" class="btn btn-sm btn-whatsapp nav-cta">
           <ion-icon name="logo-whatsapp"></ion-icon>
           Peça no WhatsApp
@@ -85,8 +86,8 @@
             <h1 class="slide-title">Surpreenda com os Buquês Mais <em>Exclusivos de Ipatinga</em></h1>
             <p class="slide-desc">Rosas nobres selecionadas, mega buquês de 100 rosas e arranjos artísticos montados no dia com flores frescas e embalagens de luxo.</p>
             <div class="slide-actions">
-              <a href="#catalogo" class="btn btn-primary btn-lg">
-                🌸 Ver Catálogo de Buquês
+              <a href="#buques" class="btn btn-primary btn-lg">
+                🌸 Ver Buquês &amp; Arranjos
               </a>
               <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+um+buquê+de+rosas+especial!" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
                 <ion-icon name="logo-whatsapp"></ion-icon>
@@ -105,7 +106,7 @@
             <p class="slide-desc">Criações exclusivas para noivas: buquês clássicos, cascatas, copos de leite, grinaldas naturais e lapelas sob medida com acabamento impecável.</p>
             <div class="slide-actions">
               <a href="#noivas" class="btn btn-primary btn-lg">
-                💐 Ver Buquês de Noiva
+                💐 Ver Coleção Noivas
               </a>
               <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Sou+noiva+e+gostaria+de+um+orçamento+para+meu+buquê+de+casamento!" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
                 <ion-icon name="logo-whatsapp"></ion-icon>
@@ -149,478 +150,793 @@
       </div>
     </section>
 
-    <!-- ==================== CATEGORIAS RÁPIDAS (HIGHLIGHTS EM DESTAQUE) ==================== -->
-    <section class="section-highlights">
-      <div class="container">
-        <div class="category-cards-grid">
-          
-          <a href="#catalogo" class="cat-quick-card" onclick="filterCatalog('buques')">
-            <div class="cat-card-icon">💐</div>
-            <div class="cat-card-title">Buquês &amp; Arranjos</div>
-            <span class="cat-card-sub">Rosas, Girassóis &amp; Nobres</span>
-          </a>
-
-          <a href="#catalogo" class="cat-quick-card" onclick="filterCatalog('noivas')">
-            <div class="cat-card-icon">👰</div>
-            <div class="cat-card-title">Noivas &amp; Cerimônias</div>
-            <span class="cat-card-sub">Coleção de Casamentos</span>
-          </a>
-
-          <a href="#catalogo" class="cat-quick-card" onclick="filterCatalog('cestas')">
-            <div class="cat-card-icon">🎁</div>
-            <div class="cat-card-title">Cestas &amp; Café</div>
-            <span class="cat-card-sub">Frutas, Doces &amp; Flores</span>
-          </a>
-
-          <a href="#catalogo" class="cat-quick-card" onclick="filterCatalog('coroas')">
-            <div class="cat-card-icon">🕊️</div>
-            <div class="cat-card-title">Coroas de Homenagem</div>
-            <span class="cat-card-sub">Condolências &amp; Pedestais</span>
-          </a>
-
-          <a href="#catalogo" class="cat-quick-card" onclick="filterCatalog('pelucias')">
-            <div class="cat-card-icon">🧸</div>
-            <div class="cat-card-title">Kits, Pelúcias &amp; Mimos</div>
-            <span class="cat-card-sub">Chocolates &amp; Canecas</span>
-          </a>
-
-          <a href="#catalogo" class="cat-quick-card" onclick="filterCatalog('orquideas')">
-            <div class="cat-card-icon">🪴</div>
-            <div class="cat-card-title">Orquídeas Vivas</div>
-            <span class="cat-card-sub">Phalaenopsis &amp; Vasos</span>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== CATÁLOGO COMPLETO COM FILTROS INTERATIVOS ==================== -->
-    <section class="section" id="catalogo">
+    <!-- ==================== AS 6 SEÇÕES DE CATEGORIAS (FORMATO ESKINA FLORES) ==================== -->
+    
+    <!-- ==================== CATEGORIA: BUQUÊS E ARRANJOS EXCLUSIVOS ==================== -->
+    <section class="section category-showcase-section" id="buques">
       <div class="container">
         
-        <div class="section-header text-center">
-          <span class="kicker">NOSSO MOSTRUÁRIO OFICIAL</span>
-          <h2 class="section-title">Explore as Nossas <em>Criações Florais</em></h2>
-          <p class="section-lead">
-            Todas as fotos abaixo são <strong>criações reais montadas em nossa floricultura</strong>. Selecione a categoria desejada e encomende o modelo pelo WhatsApp.
-          </p>
-        </div>
-
-        <!-- Barra de Filtros Interativos -->
-        <div class="catalog-filter-bar">
-          <button class="filter-tab active" data-filter="all">🌸 Todos os Modelos</button>
-          <button class="filter-tab" data-filter="buques">💐 Buquês &amp; Arranjos</button>
-          <button class="filter-tab" data-filter="noivas">👰 Noivas &amp; Casamento</button>
-          <button class="filter-tab" data-filter="cestas">🎁 Cestas Especiais</button>
-          <button class="filter-tab" data-filter="coroas">🕊️ Coroas de Condolências</button>
-          <button class="filter-tab" data-filter="pelucias">🧸 Pelúcias &amp; Mimos</button>
-          <button class="filter-tab" data-filter="orquideas">🪴 Orquídeas &amp; Vasos</button>
-        </div>
-
-        <!-- Grid de Produtos Reais -->
-        <div class="catalog-grid" id="catalogGrid">
+        <div class="category-row-layout">
           
-          <!-- BUQUÊS & ARRANJOS -->
-          <article class="prod-card" data-cat="buques">
-            <div class="prod-badge">Destaque Exclusivo</div>
-            <div class="prod-img-wrap">
+          <!-- LADO ESQUERDO: CARD EM DESTAQUE COM BOTÃO DO WHATSAPP DA CATEGORIA -->
+          <div class="cat-featured-card">
+            <div class="cat-badge-header">
+              <span class="cat-badge-main">Buquês e Arranjos</span>
+              <span class="cat-badge-sub">personalizados</span>
+            </div>
+            
+            <div class="cat-featured-img-wrap">
               <img src="./assets/produtos/buques_arranjos/buques_14.webp" alt="Mega Buquê 100 Rosas Vermelhas Luxo" loading="lazy">
             </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Buquês Nobres</span>
-              <h3 class="prod-title">Mega Buquê 100 Rosas Vermelhas Luxo</h3>
-              <p class="prod-desc">O ápice do romantismo! 100 rosas vermelhas selecionadas em embalagem especial preta e laço de cetim.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+o+Mega+Buquê+de+100+Rosas+Vermelhas+Luxo!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir este modelo
-              </a>
-            </div>
-          </article>
 
-          <article class="prod-card" data-cat="buques">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/buques_arranjos/buques_07.webp" alt="Buquê Clássico de Rosas Vermelhas no Papel Preto" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Buquês Nobres</span>
-              <h3 class="prod-title">Buquê Rosas Vermelhas Dark Velvet</h3>
-              <p class="prod-desc">Rosas aveludadas envoltas em papel preto sofisticado e laço de cetim vermelho.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+o+Buquê+Rosas+Vermelhas+Dark+Velvet!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir este modelo
-              </a>
-            </div>
-          </article>
+            <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+Buquês+e+Arranjos+na+Estação+das+Flores!" target="_blank" rel="noopener" class="btn btn-whatsapp cat-featured-btn">
+              <ion-icon name="logo-whatsapp" style="font-size: 1.3rem;"></ion-icon>
+              COMPRAR AGORA!
+            </a>
+          </div>
 
-          <article class="prod-card" data-cat="buques">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/buques_arranjos/buques_01.webp" alt="Buquê Romântico de Rosas e Lírios Pink" loading="lazy">
+          <!-- LADO DIREITO: TÍTULO, DESCRIÇÃO E CARROSSEL COM SETAS -->
+          <div class="cat-content-col">
+            
+            <div class="cat-header-info">
+              <div class="gold-line"></div>
+              <h2 class="cat-section-title">BUQUÊS E ARRANJOS EXCLUSIVOS</h2>
+              <p class="cat-section-desc">Flores frescas e combinações únicas que transmitem amor, alegria e gratidão. Ideais para presentear criando momentos inesquecíveis. 💐❤️</p>
             </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Buquês Nobres</span>
-              <h3 class="prod-title">Buquê Romântico Rosas &amp; Lírios Pink</h3>
-              <p class="prod-desc">Combinação harmoniosa de lírios perfumados, rosas e flores nobres em tons de rosa.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+o+Buquê+Romântico+Rosas+e+Lírios+Pink!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir este modelo
-              </a>
-            </div>
-          </article>
 
-          <article class="prod-card" data-cat="buques">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/buques_arranjos/buques_05.webp" alt="Buquê Solar de Girassol no Kraft Elegance" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Buquês Nobres</span>
-              <h3 class="prod-title">Buquê Solar Girassol no Kraft Vintage</h3>
-              <p class="prod-desc">Girassóis radiantes com gipsofila e acabamento em papel jornal vintage e laço rústico.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+o+Buquê+Solar+Girassol+no+Kraft+Vintage!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir este modelo
-              </a>
-            </div>
-          </article>
+            <!-- CARROSSEL COM CONTROLES DE SETA -->
+            <div class="cat-carousel-container" data-carousel="buques">
+              <button class="carousel-arrow prev-arrow" aria-label="Voltar itens" onclick="scrollCarousel('buques', -1)">‹</button>
+              
+              <div class="cat-carousel-track" id="track-buques">
+                
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/buques_arranjos/buques_07.webp" alt="Buquê Dark Velvet" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Buquê Dark Velvet</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Buquê+Dark+Velvet+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/buques_arranjos/buques_01.webp" alt="Rosas & Lírios Pink" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Rosas & Lírios Pink</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Rosas+&+Lírios+Pink+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/buques_arranjos/buques_05.webp" alt="Girassol Vintage Kraft" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Girassol Vintage Kraft</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Girassol+Vintage+Kraft+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/buques_arranjos/buques_06.webp" alt="Girassóis & Rosas" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Girassóis & Rosas</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Girassóis+&+Rosas+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/buques_arranjos/buques_16.webp" alt="Rosas & Tango Dourado" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Rosas & Tango Dourado</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Rosas+&+Tango+Dourado+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/buques_arranjos/buques_15.webp" alt="Rosas Amarelas" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Rosas Amarelas</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Rosas+Amarelas+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/buques_arranjos/buques_11.webp" alt="Rosas Brancas Nobres" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Rosas Brancas Nobres</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Rosas+Brancas+Nobres+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/buques_arranjos/buques_02.webp" alt="Gérberas Coloridas" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Gérberas Coloridas</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Gérberas+Coloridas+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/buques_arranjos/buques_04.webp" alt="Buquê Rosas Vermelhas" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Buquê Rosas Vermelhas</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Buquê+Rosas+Vermelhas+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/buques_arranjos/buques_17.webp" alt="Trio de Rosas Amor" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Trio de Rosas Amor</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Trio+de+Rosas+Amor+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/buques_arranjos/buques_18.webp" alt="Buquê Paixão Clássico" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Buquê Paixão Clássico</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Buquê+Paixão+Clássico+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              </div>
 
-          <article class="prod-card" data-cat="buques">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/buques_arranjos/buques_06.webp" alt="Buquê de Girassóis com Folhagens" loading="lazy">
+              <button class="carousel-arrow next-arrow" aria-label="Avançar itens" onclick="scrollCarousel('buques', 1)">›</button>
             </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Buquês Nobres</span>
-              <h3 class="prod-title">Buquê Trio Solar Girassóis &amp; Rosas</h3>
-              <p class="prod-desc">Energia pura! Girassóis vibrantes combinados com rosas vermelhas e folhagens finas.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+o+Buquê+Trio+Solar+Girassóis+e+Rosas!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir este modelo
-              </a>
-            </div>
-          </article>
 
-          <article class="prod-card" data-cat="buques">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/buques_arranjos/buques_16.webp" alt="Buquê Rosas Vermelhas e Tango" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Buquês Nobres</span>
-              <h3 class="prod-title">Buquê Paixão Rosas &amp; Tango Dourado</h3>
-              <p class="prod-desc">Rosas vermelhas selecionadas entrelaçadas com flores de tango amarelo e laço volumoso.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+o+Buquê+Paixão+Rosas+e+Tango!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir este modelo
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="buques">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/buques_arranjos/buques_15.webp" alt="Buquê Rosas Amarelas Radiantes" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Buquês Nobres</span>
-              <h3 class="prod-title">Buquê Rosas Amarelas Radiantes</h3>
-              <p class="prod-desc">Simbolismo de alegria, amizade e prosperidade em rosas amarelas impecáveis.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+o+Buquê+de+Rosas+Amarelas+Radiantes!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir este modelo
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="buques">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/buques_arranjos/buques_11.webp" alt="Buquê Rosas Brancas Nobres" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Buquês Nobres</span>
-              <h3 class="prod-title">Buquê Rosas Brancas Pureza &amp; Paz</h3>
-              <p class="prod-desc">Flores nobres em branco neve com folhagens de eucalipto para ocasiões solenes e elegantes.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+o+Buquê+Rosas+Brancas+Pureza!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir este modelo
-              </a>
-            </div>
-          </article>
-
-          <!-- NOIVAS & CASAMENTOS -->
-          <article class="prod-card" data-cat="noivas" id="noivas">
-            <div class="prod-badge" style="background: linear-gradient(135deg, #c5a059, #eab308);">Noivas VIP</div>
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/noivas_casamentos/noiva_buque_01.webp" alt="Buquê de Noiva Clássico" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Coleção Noivas</span>
-              <h3 class="prod-title">Buquê de Noiva Imperial Clássico</h3>
-              <p class="prod-desc">Montagem ergonômica com flores frescas importadas e acabamento refinado para o altar.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+falar+sobre+o+Buquê+de+Noiva+Imperial+Clássico!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Orçamento de Noiva
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="noivas">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/noivas_casamentos/noivas_01.webp" alt="Buquê Noiva Copos de Leite" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Coleção Noivas</span>
-              <h3 class="prod-title">Buquê Noiva Copos de Leite Elegance</h3>
-              <p class="prod-desc">Copos de leite brancos de alta nobreza com haste revestida em fita de cetim acetinado.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+orçamento+para+o+Buquê+de+Noiva+Copos+de+Leite!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Orçamento de Noiva
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="noivas">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/noivas_casamentos/noivas_02.webp" alt="Buquê Noiva Romântico Rosas e Gipsofila" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Coleção Noivas</span>
-              <h3 class="prod-title">Buquê Noiva Rosas Pink &amp; Gipsofila</h3>
-              <p class="prod-desc">Design arredondado delicado com mini rosas e chuva-de-prata para casamentos românticos.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+orçamento+para+o+Buquê+Noiva+Rosas+Pink!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Orçamento de Noiva
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="noivas">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/noivas_casamentos/noivas_05.webp" alt="Buquê Noiva Rústico Cabo em Juta" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Coleção Noivas</span>
-              <h3 class="prod-title">Buquê Noiva Rústico Chic com Juta</h3>
-              <p class="prod-desc">Perfeito para casamentos ao ar livre, no campo ou na praia com cabo em corda de juta natural.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+orçamento+para+o+Buquê+Noiva+Rústico+Chic!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Orçamento de Noiva
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="noivas">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/noivas_casamentos/noivas_07.webp" alt="Grinalda e Coroa de Flores Naturais" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Coleção Noivas</span>
-              <h3 class="prod-title">Grinalda / Coroa Floral Natural</h3>
-              <p class="prod-desc">Arranjos florais de cabelo para noivas, daminhas e ensaios pré-wedding com flores naturais.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+orçamento+para+a+Grinalda+Floral+Natural!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Orçamento de Noiva
-              </a>
-            </div>
-          </article>
-
-          <!-- CESTAS ESPECIAIS & CAFÉ DA MANHÃ -->
-          <article class="prod-card" data-cat="cestas" id="cestas">
-            <div class="prod-badge" style="background: linear-gradient(135deg, #f59e0b, #d97706);">Mais Pedida</div>
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/cestas_especiais/cestas_01.webp" alt="Cesta Café da Manhã com Frutas Nobres" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Cestas Especiais</span>
-              <h3 class="prod-title">Cesta Café da Manhã Frutas &amp; Flores</h3>
-              <p class="prod-desc">Uvas, maçãs, bananas, pães artesanais, sucos e geleias finas em cesta rústica elegante.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+a+Cesta+Café+da+Manhã+Frutas+e+Flores!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir esta cesta
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="cestas">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/cestas_especiais/cestas_02.webp" alt="Cesta Aniversário com Balão Metalizado" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Cestas Especiais</span>
-              <h3 class="prod-title">Cesta Feliz Aniversário com Balão</h3>
-              <p class="prod-desc">Cesta completa decorada com balão comemorativo, orquídea viva, guloseimas e frutas.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+a+Cesta+Feliz+Aniversário+com+Balão!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir esta cesta
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="cestas">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/cestas_especiais/cestas_04.webp" alt="Cesta Petiscos Cerveja e Pelúcia" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Cestas Especiais</span>
-              <h3 class="prod-title">Cesta Petiscos, Bebidas &amp; Pelúcia</h3>
-              <p class="prod-desc">Combinação especial com cervejas/bebidas selecionadas, petiscos nobres e ursinho de pelúcia.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+a+Cesta+Petiscos+Bebidas+e+Pelúcia!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir esta cesta
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="cestas">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/cestas_especiais/cestas_03.webp" alt="Cesta Amor com Pelúcia e Chocolates" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Cestas Especiais</span>
-              <h3 class="prod-title">Cesta Amor com Pelúcia &amp; Chocolates</h3>
-              <p class="prod-desc">Ursinho carinhoso, chocolates finos e guloseimas embalados com celofane e laço gigante.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+a+Cesta+Amor+com+Pelúcia+e+Chocolates!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir esta cesta
-              </a>
-            </div>
-          </article>
-
-          <!-- COROAS DE HOMENAGEM & CONDOLÊNCIAS -->
-          <article class="prod-card" data-cat="coroas" id="coroas">
-            <div class="prod-badge" style="background: rgba(30, 41, 59, 0.9);">Entrega Urgente</div>
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/coroas_condolencias/coroas_01.webp" alt="Coroa de Flores Condolências Clássica" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Coroas de Homenagem</span>
-              <h3 class="prod-title">Coroa Solene Crisântemos &amp; Rosas</h3>
-              <p class="prod-desc">Homenagem solene com montagem em pedestal, flores frescas e faixa com mensagem personalizada.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+informações+urgentes+sobre+Coroa+de+Homenagem+Fúnebre!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir com Urgência
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="coroas">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/coroas_condolencias/coroas_02.webp" alt="Coroa Homenagem Flores Nobres" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Coroas de Homenagem</span>
-              <h3 class="prod-title">Coroa Serenidade Flores Brancas &amp; Vermelhas</h3>
-              <p class="prod-desc">Montagem imponente com flores nobres em pedestal para velórios e cemitérios do Vale do Aço.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+a+Coroa+Serenidade+Flores+Nobres!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir com Urgência
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="coroas">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/coroas_condolencias/coroas_04.webp" alt="Coroa Grande Paz e Luz Branca" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Coroas de Homenagem</span>
-              <h3 class="prod-title">Coroa Grande Paz &amp; Luz em Tons Brancos</h3>
-              <p class="prod-desc">Flores brancas nobres e folhagens selecionadas expressando condolências e respeito eterno.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+a+Coroa+Grande+Paz+e+Luz!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir com Urgência
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="coroas">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/coroas_condolencias/coroas_05.webp" alt="Coroa de Flores com Faixa de Homenagem" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Coroas de Homenagem</span>
-              <h3 class="prod-title">Coroa Homenagem com Faixa Personalizada</h3>
-              <p class="prod-desc">Entrega direta e ágil nos cemitérios e capelas de Ipatinga com a frase de homenagem da família/empresa.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+uma+Coroa+de+Flores+com+Faixa+de+Homenagem!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir com Urgência
-              </a>
-            </div>
-          </article>
-
-          <!-- KITS, PELÚCIAS & MIMOS -->
-          <article class="prod-card" data-cat="pelucias">
-            <div class="prod-badge" style="background: linear-gradient(135deg, #e11d48, #be123c);">Kit Romântico</div>
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/kits_pelucias/pelucias_11.webp" alt="Combo Amo Você com Ferrero e Flores" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Kits Românticos</span>
-              <h3 class="prod-title">Combo Caixa "Amo Você" Ferrero &amp; Flores</h3>
-              <p class="prod-desc">Caixa temática em formato coração com bombons Ferrero Rocher, flores frescas e ursinho.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+o+Combo+Caixa+Amo+Você!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir este kit
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="pelucias">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/kits_pelucias/pelucias_02.webp" alt="Ursinho Pelúcia Amor Branco" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Pelúcias &amp; Mimos</span>
-              <h3 class="prod-title">Ursinho Pelúcia Antialérgica "Amor"</h3>
-              <p class="prod-desc">Pelúcia macia e fofa com coração bordado para acompanhar seu buquê de flores.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+incluir+um+Ursinho+de+Pelúcia+no+meu+pedido!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Adicionar ao pedido
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="pelucias">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/kits_pelucias/pelucias_16.webp" alt="Caneca Personalizada Amor e Rosas" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Canecas &amp; Mimos</span>
-              <h3 class="prod-title">Caneca Cerâmica Temática "Amor"</h3>
-              <p class="prod-desc">Caneca premium de porcelana para presentear acompanhada de bombons e flores.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+uma+Caneca+Personalizada+com+chocolates!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir Caneca
-              </a>
-            </div>
-          </article>
-
-          <!-- ORQUÍDEAS & VASOS VIVOS -->
-          <article class="prod-card" data-cat="orquideas">
-            <div class="prod-badge" style="background: linear-gradient(135deg, #ec4899, #be185d);">Flor Viva</div>
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/orquideas_vasos/orquideas_01.webp" alt="Orquídea Phalaenopsis Pink Imperial" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Orquídeas Vivas</span>
-              <h3 class="prod-title">Orquídea Phalaenopsis Pink Imperial</h3>
-              <p class="prod-desc">Orquídea de haste nobre com flores exuberantes em vaso decorado com laço de cetim.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+a+Orquídea+Phalaenopsis+Pink!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir Orquídea
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="orquideas">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/orquideas_vasos/orquideas_05.webp" alt="Orquídea Phalaenopsis Branca Premium" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Orquídeas Vivas</span>
-              <h3 class="prod-title">Orquídea Branca Nobre em Vaso de Luxo</h3>
-              <p class="prod-desc">Clássica e duradoura. Excelente opção para presentes corporativos e decoração de interiores.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+a+Orquídea+Branca+Nobre!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir Orquídea
-              </a>
-            </div>
-          </article>
-
-          <article class="prod-card" data-cat="orquideas">
-            <div class="prod-img-wrap">
-              <img src="./assets/produtos/orquideas_vasos/orquideas_04.webp" alt="Orquídea Amarela Rara com Laço Dourado" loading="lazy">
-            </div>
-            <div class="prod-body">
-              <span class="prod-cat-label">Orquídeas Vivas</span>
-              <h3 class="prod-title">Orquídea Amarela Rara com Laço Dourado</h3>
-              <p class="prod-desc">Variedade exclusiva em tons solares com decoração especial e longa durabilidade.</p>
-              <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+a+Orquídea+Amarela+Rara!" target="_blank" rel="noopener" class="btn btn-whatsapp prod-btn">
-                <ion-icon name="logo-whatsapp"></ion-icon> Pedir Orquídea
-              </a>
-            </div>
-          </article>
+          </div>
 
         </div>
 
-        <!-- Banner de Ajuda no WhatsApp -->
-        <div class="catalog-help-banner">
-          <div class="help-text">
-            <h3>Quer um arranjo totalmente personalizado?</h3>
-            <p>Diga para nossa equipe as cores, flores e complementos que você deseja e nós montamos na hora!</p>
+      </div>
+    </section>
+    <!-- ==================== CATEGORIA: BUQUÊS DE NOIVA & CASAMENTOS ==================== -->
+    <section class="section category-showcase-section" id="noivas">
+      <div class="container">
+        
+        <div class="category-row-layout">
+          
+          <!-- LADO ESQUERDO: CARD EM DESTAQUE COM BOTÃO DO WHATSAPP DA CATEGORIA -->
+          <div class="cat-featured-card">
+            <div class="cat-badge-header">
+              <span class="cat-badge-main">Coleção Noivas</span>
+              <span class="cat-badge-sub">casamentos & cerimônias</span>
+            </div>
+            
+            <div class="cat-featured-img-wrap">
+              <img src="./assets/produtos/noivas_casamentos/noivas_01.webp" alt="Buquê Noiva Copos de Leite Nobres" loading="lazy">
+            </div>
+
+            <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Sou+noiva+e+gostaria+de+um+orçamento+para+Buquê+de+Casamento!" target="_blank" rel="noopener" class="btn btn-whatsapp cat-featured-btn">
+              <ion-icon name="logo-whatsapp" style="font-size: 1.3rem;"></ion-icon>
+              COMPRAR AGORA!
+            </a>
           </div>
-          <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+montar+um+arranjo+personalizado+exclusivo!" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
-            <ion-icon name="logo-whatsapp"></ion-icon> Falar com a Florista
-          </a>
+
+          <!-- LADO DIREITO: TÍTULO, DESCRIÇÃO E CARROSSEL COM SETAS -->
+          <div class="cat-content-col">
+            
+            <div class="cat-header-info">
+              <div class="gold-line"></div>
+              <h2 class="cat-section-title">BUQUÊS DE NOIVA & CASAMENTOS</h2>
+              <p class="cat-section-desc">A delicadeza e sofisticação que o dia do seu casamento merece. Buquês autorais, grinaldas e lapelas feitos com amor e técnica floral impecável. 👰✨</p>
+            </div>
+
+            <!-- CARROSSEL COM CONTROLES DE SETA -->
+            <div class="cat-carousel-container" data-carousel="noivas">
+              <button class="carousel-arrow prev-arrow" aria-label="Voltar itens" onclick="scrollCarousel('noivas', -1)">‹</button>
+              
+              <div class="cat-carousel-track" id="track-noivas">
+                
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/noivas_casamentos/noiva_buque_01.webp" alt="Buquê Imperial Clássico" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Buquê Imperial Clássico</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Buquê+Imperial+Clássico+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/noivas_casamentos/noiva_buque_02.webp" alt="Buquê Cascata Branca" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Buquê Cascata Branca</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Buquê+Cascata+Branca+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/noivas_casamentos/noivas_02.webp" alt="Rosas Pink & Gipsofila" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Rosas Pink & Gipsofila</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Rosas+Pink+&+Gipsofila+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/noivas_casamentos/noivas_03.webp" alt="Alstroemérias Brancas" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Alstroemérias Brancas</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Alstroemérias+Brancas+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/noivas_casamentos/noivas_04.webp" alt="Rosas Brancas & Vermelhas" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Rosas Brancas & Vermelhas</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Rosas+Brancas+&+Vermelhas+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/noivas_casamentos/noivas_05.webp" alt="Buquê Rústico em Juta" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Buquê Rústico em Juta</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Buquê+Rústico+em+Juta+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/noivas_casamentos/noivas_06.webp" alt="Buquê Rosas com Faixa" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Buquê Rosas com Faixa</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Buquê+Rosas+com+Faixa+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/noivas_casamentos/noivas_07.webp" alt="Grinalda de Flores Naturais" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Grinalda de Flores Naturais</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Grinalda+de+Flores+Naturais+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/noivas_casamentos/noiva_buque_05.webp" alt="Buquê Romântico Suave" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Buquê Romântico Suave</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Buquê+Romântico+Suave+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/noivas_casamentos/noiva_buque_08.webp" alt="Buquê Redondo Nobre" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Buquê Redondo Nobre</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Buquê+Redondo+Nobre+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              </div>
+
+              <button class="carousel-arrow next-arrow" aria-label="Avançar itens" onclick="scrollCarousel('noivas', 1)">›</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== CATEGORIA: CESTAS PERSONALIZADAS & CAFÉ DA MANHÃ ==================== -->
+    <section class="section category-showcase-section" id="cestas">
+      <div class="container">
+        
+        <div class="category-row-layout">
+          
+          <!-- LADO ESQUERDO: CARD EM DESTAQUE COM BOTÃO DO WHATSAPP DA CATEGORIA -->
+          <div class="cat-featured-card">
+            <div class="cat-badge-header">
+              <span class="cat-badge-main">Cestas Especiais</span>
+              <span class="cat-badge-sub">café da manhã & presentes</span>
+            </div>
+            
+            <div class="cat-featured-img-wrap">
+              <img src="./assets/produtos/cestas_especiais/cestas_01.webp" alt="Cesta de Café da Manhã Completa com Frutas e Flores" loading="lazy">
+            </div>
+
+            <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+uma+Cesta+Personalizada+/+Café+da+Manhã!" target="_blank" rel="noopener" class="btn btn-whatsapp cat-featured-btn">
+              <ion-icon name="logo-whatsapp" style="font-size: 1.3rem;"></ion-icon>
+              COMPRAR AGORA!
+            </a>
+          </div>
+
+          <!-- LADO DIREITO: TÍTULO, DESCRIÇÃO E CARROSSEL COM SETAS -->
+          <div class="cat-content-col">
+            
+            <div class="cat-header-info">
+              <div class="gold-line"></div>
+              <h2 class="cat-section-title">CESTAS PERSONALIZADAS & CAFÉ DA MANHÃ</h2>
+              <p class="cat-section-desc">Comece o dia de quem você ama da melhor maneira! Cestas fartas com frutas frescas selecionadas, guloseimas finas, pelúcias e flores naturais. 🎁☀️</p>
+            </div>
+
+            <!-- CARROSSEL COM CONTROLES DE SETA -->
+            <div class="cat-carousel-container" data-carousel="cestas">
+              <button class="carousel-arrow prev-arrow" aria-label="Voltar itens" onclick="scrollCarousel('cestas', -1)">‹</button>
+              
+              <div class="cat-carousel-track" id="track-cestas">
+                
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/cestas_especiais/cestas_02.webp" alt="Cesta Feliz Aniversário" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Cesta Feliz Aniversário</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Cesta+Feliz+Aniversário+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/cestas_especiais/cestas_03.webp" alt="Cesta Amor com Pelúcia" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Cesta Amor com Pelúcia</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Cesta+Amor+com+Pelúcia+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/cestas_especiais/cestas_04.webp" alt="Cesta Petiscos & Cerveja" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Cesta Petiscos & Cerveja</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Cesta+Petiscos+&+Cerveja+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/cestas_especiais/cestas_05.webp" alt="Cesta Doce Carinho" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Cesta Doce Carinho</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Cesta+Doce+Carinho+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/cestas_especiais/cestas_06.webp" alt="Cesta Café Gourmet Frutas" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Cesta Café Gourmet Frutas</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Cesta+Café+Gourmet+Frutas+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/cestas_especiais/cestas_07.webp" alt="Cesta Café da Manhã Luxo" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Cesta Café da Manhã Luxo</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Cesta+Café+da+Manhã+Luxo+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              </div>
+
+              <button class="carousel-arrow next-arrow" aria-label="Avançar itens" onclick="scrollCarousel('cestas', 1)">›</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== CATEGORIA: COROAS DE HOMENAGEM & CONDOLÊNCIAS ==================== -->
+    <section class="section category-showcase-section" id="coroas">
+      <div class="container">
+        
+        <div class="category-row-layout">
+          
+          <!-- LADO ESQUERDO: CARD EM DESTAQUE COM BOTÃO DO WHATSAPP DA CATEGORIA -->
+          <div class="cat-featured-card">
+            <div class="cat-badge-header">
+              <span class="cat-badge-main">Coroas Fúnebres</span>
+              <span class="cat-badge-sub">homenagem & condolências</span>
+            </div>
+            
+            <div class="cat-featured-img-wrap">
+              <img src="./assets/produtos/coroas_condolencias/coroas_01.webp" alt="Coroa de Flores Solene em Pedestal" loading="lazy">
+            </div>
+
+            <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Preciso+de+atendimento+urgente+para+Coroa+de+Homenagem+/+Condolências!" target="_blank" rel="noopener" class="btn btn-whatsapp cat-featured-btn">
+              <ion-icon name="logo-whatsapp" style="font-size: 1.3rem;"></ion-icon>
+              COMPRAR AGORA!
+            </a>
+          </div>
+
+          <!-- LADO DIREITO: TÍTULO, DESCRIÇÃO E CARROSSEL COM SETAS -->
+          <div class="cat-content-col">
+            
+            <div class="cat-header-info">
+              <div class="gold-line"></div>
+              <h2 class="cat-section-title">COROAS DE HOMENAGEM & CONDOLÊNCIAS</h2>
+              <p class="cat-section-desc">Preste sua última homenagem com respeito, solene beleza e pontualidade. Entregas urgentes em todos os cemitérios e capelas de velório de Ipatinga e região. 🕊️🌿</p>
+            </div>
+
+            <!-- CARROSSEL COM CONTROLES DE SETA -->
+            <div class="cat-carousel-container" data-carousel="coroas">
+              <button class="carousel-arrow prev-arrow" aria-label="Voltar itens" onclick="scrollCarousel('coroas', -1)">‹</button>
+              
+              <div class="cat-carousel-track" id="track-coroas">
+                
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/coroas_condolencias/coroas_02.webp" alt="Coroa Flores Brancas & Vermelhas" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Coroa Flores Brancas & Vermelhas</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Coroa+Flores+Brancas+&+Vermelhas+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/coroas_condolencias/coroas_03.webp" alt="Coroa Solene em Pedestal" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Coroa Solene em Pedestal</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Coroa+Solene+em+Pedestal+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/coroas_condolencias/coroas_04.webp" alt="Coroa Paz & Luz Branca" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Coroa Paz & Luz Branca</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Coroa+Paz+&+Luz+Branca+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/coroas_condolencias/coroas_05.webp" alt="Coroa com Faixa de Homenagem" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Coroa com Faixa de Homenagem</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Coroa+com+Faixa+de+Homenagem+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              </div>
+
+              <button class="carousel-arrow next-arrow" aria-label="Avançar itens" onclick="scrollCarousel('coroas', 1)">›</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== CATEGORIA: KITS ROMÂNTICOS, PELÚCIAS & MIMOS ==================== -->
+    <section class="section category-showcase-section" id="pelucias">
+      <div class="container">
+        
+        <div class="category-row-layout">
+          
+          <!-- LADO ESQUERDO: CARD EM DESTAQUE COM BOTÃO DO WHATSAPP DA CATEGORIA -->
+          <div class="cat-featured-card">
+            <div class="cat-badge-header">
+              <span class="cat-badge-main">Kits & Pelúcias</span>
+              <span class="cat-badge-sub">chocolates & mimos</span>
+            </div>
+            
+            <div class="cat-featured-img-wrap">
+              <img src="./assets/produtos/kits_pelucias/pelucias_11.webp" alt="Combo Caixa Amo Você com Ferrero e Flores" loading="lazy">
+            </div>
+
+            <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+Kits+Românticos,+Pelúcias+e+Chocolates!" target="_blank" rel="noopener" class="btn btn-whatsapp cat-featured-btn">
+              <ion-icon name="logo-whatsapp" style="font-size: 1.3rem;"></ion-icon>
+              COMPRAR AGORA!
+            </a>
+          </div>
+
+          <!-- LADO DIREITO: TÍTULO, DESCRIÇÃO E CARROSSEL COM SETAS -->
+          <div class="cat-content-col">
+            
+            <div class="cat-header-info">
+              <div class="gold-line"></div>
+              <h2 class="cat-section-title">KITS ROMÂNTICOS, PELÚCIAS & MIMOS</h2>
+              <p class="cat-section-desc">Complementos perfeitos para emocionar: caixas temáticas 'Amo Você', chocolates Ferrero Rocher, Nutella, ursinhos fofos e canecas personalizadas. 🧸🍫</p>
+            </div>
+
+            <!-- CARROSSEL COM CONTROLES DE SETA -->
+            <div class="cat-carousel-container" data-carousel="pelucias">
+              <button class="carousel-arrow prev-arrow" aria-label="Voltar itens" onclick="scrollCarousel('pelucias', -1)">‹</button>
+              
+              <div class="cat-carousel-track" id="track-pelucias">
+                
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/kits_pelucias/pelucias_12.webp" alt="Kit Romântico Coração" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Kit Romântico Coração</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Kit+Romântico+Coração+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/kits_pelucias/pelucias_01.webp" alt="Ursinho Pelúcia Caramelo" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Ursinho Pelúcia Caramelo</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Ursinho+Pelúcia+Caramelo+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/kits_pelucias/pelucias_02.webp" alt="Ursinho Pelúcia Amor Branco" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Ursinho Pelúcia Amor Branco</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Ursinho+Pelúcia+Amor+Branco+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/kits_pelucias/pelucias_05.webp" alt="Urso Eu e Você" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Urso Eu e Você</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Urso+Eu+e+Você+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/kits_pelucias/pelucias_09.webp" alt="Pelúcia Stitch / Coelho" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Pelúcia Stitch / Coelho</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Pelúcia+Stitch+/+Coelho+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/kits_pelucias/pelucias_16.webp" alt="Caneca Cerâmica Amor" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Caneca Cerâmica Amor</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Caneca+Cerâmica+Amor+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/kits_pelucias/pelucias_17.webp" alt="Caneca Stitch" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Caneca Stitch</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Caneca+Stitch+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/kits_pelucias/pelucias_13.webp" alt="Caixa Ferrero Rocher" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Caixa Ferrero Rocher</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Caixa+Ferrero+Rocher+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/kits_pelucias/pelucias_14.webp" alt="Nutella / Raffaello" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Nutella / Raffaello</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Nutella+/+Raffaello+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/kits_pelucias/pelucias_15.webp" alt="Caixa Parabéns Especial" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Caixa Parabéns Especial</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Caixa+Parabéns+Especial+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              </div>
+
+              <button class="carousel-arrow next-arrow" aria-label="Avançar itens" onclick="scrollCarousel('pelucias', 1)">›</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- ==================== CATEGORIA: ORQUÍDEAS VIVAS & VASOS DECORATIVOS ==================== -->
+    <section class="section category-showcase-section" id="orquideas">
+      <div class="container">
+        
+        <div class="category-row-layout">
+          
+          <!-- LADO ESQUERDO: CARD EM DESTAQUE COM BOTÃO DO WHATSAPP DA CATEGORIA -->
+          <div class="cat-featured-card">
+            <div class="cat-badge-header">
+              <span class="cat-badge-main">Orquídeas Vivas</span>
+              <span class="cat-badge-sub">phalaenopsis & vasos</span>
+            </div>
+            
+            <div class="cat-featured-img-wrap">
+              <img src="./assets/produtos/orquideas_vasos/orquideas_01.webp" alt="Orquídea Phalaenopsis Pink Imperial" loading="lazy">
+            </div>
+
+            <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Olá!+Gostaria+de+encomendar+Orquídeas+Vivas+na+Estação+das+Flores!" target="_blank" rel="noopener" class="btn btn-whatsapp cat-featured-btn">
+              <ion-icon name="logo-whatsapp" style="font-size: 1.3rem;"></ion-icon>
+              COMPRAR AGORA!
+            </a>
+          </div>
+
+          <!-- LADO DIREITO: TÍTULO, DESCRIÇÃO E CARROSSEL COM SETAS -->
+          <div class="cat-content-col">
+            
+            <div class="cat-header-info">
+              <div class="gold-line"></div>
+              <h2 class="cat-section-title">ORQUÍDEAS VIVAS & VASOS DECORATIVOS</h2>
+              <p class="cat-section-desc">Flores vivas e duradouras que transmitem elegância e sofisticação. Orquídeas Phalaenopsis nobres em embalagens para presente e vasos decorativos. 🪴🌸</p>
+            </div>
+
+            <!-- CARROSSEL COM CONTROLES DE SETA -->
+            <div class="cat-carousel-container" data-carousel="orquideas">
+              <button class="carousel-arrow prev-arrow" aria-label="Voltar itens" onclick="scrollCarousel('orquideas', -1)">‹</button>
+              
+              <div class="cat-carousel-track" id="track-orquideas">
+                
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/orquideas_vasos/orquideas_02.webp" alt="Orquídeas Duplas no Vaso" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Orquídeas Duplas no Vaso</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Orquídeas+Duplas+no+Vaso+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/orquideas_vasos/orquideas_03.webp" alt="Vaso Lírios Cor-de-Rosa" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Vaso Lírios Cor-de-Rosa</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Vaso+Lírios+Cor-de-Rosa+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/orquideas_vasos/orquideas_04.webp" alt="Orquídea Amarela Rara" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Orquídea Amarela Rara</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Orquídea+Amarela+Rara+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              <div class="cat-slide-item">
+                <div class="cat-item-img-wrap">
+                  <img src="./assets/produtos/orquideas_vasos/orquideas_05.webp" alt="Orquídea Branca Nobre" loading="lazy">
+                </div>
+                <div class="cat-item-info">
+                  <h4>Orquídea Branca Nobre</h4>
+                  <a href="https://api.whatsapp.com/send/?phone=5531988600761&text=Ol%C3%A1!+Gostaria+de+encomendar+o+item:+Orquídea+Branca+Nobre+da+Esta%C3%A7%C3%A3o+das+Flores!" target="_blank" rel="noopener" class="cat-item-btn">
+                    <ion-icon name="logo-whatsapp"></ion-icon> Pedir este
+                  </a>
+                </div>
+              </div>
+              </div>
+
+              <button class="carousel-arrow next-arrow" aria-label="Avançar itens" onclick="scrollCarousel('orquideas', 1)">›</button>
+            </div>
+
+          </div>
+
         </div>
 
       </div>
@@ -639,13 +955,13 @@
           <div class="step-card">
             <div class="step-number">01</div>
             <h3>Escolha o Modelo</h3>
-            <p>Navegue pelo catálogo ou envie uma foto de referência do presente que você deseja.</p>
+            <p>Navegue pelas categorias e clique em "Pedir este" ou envie a foto do modelo desejado.</p>
           </div>
 
           <div class="step-card">
             <div class="step-number">02</div>
             <h3>Personalize os Detalhes</h3>
-            <p>Adicione chocolates, pelúcias, balões e a sua mensagem especial para o cartão de presente.</p>
+            <p>Adicione chocolates, pelúcias, balões e a sua mensagem especial para o cartão de presente grátis.</p>
           </div>
 
           <div class="step-card">
@@ -665,8 +981,8 @@
           <div class="store-info-col">
             <span class="kicker">TRADIÇÃO &amp; CONFIANÇA</span>
             <h2 class="section-title">Venha Conhecer a <em>Nossa Loja Física</em></h2>
-            <p style="color: var(--color-text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem;">
-              A <strong>Floricultura Estação das Flores</strong> possui endereço físico fixo no Bairro Canaã em Ipatinga - MG. Contamos com um showroom completo e climatizado repleto de flores frescas diárias, pelúcias gigantes, cestas e opções de presentes à pronta entrega.
+            <p style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem;">
+              A <strong>Floricultura Estação das Flores</strong> possui endereço fixo no Bairro Canaã em Ipatinga - MG. Contamos com um showroom completo e climatizado repleto de flores frescas diárias, pelúcias gigantes, cestas e opções de presentes à pronta entrega.
             </p>
 
             <div class="store-features-list">
@@ -774,7 +1090,7 @@
       </div>
     </section>
 
-    <!-- ==================== FAQ (DÚVIDAS FREQUENTES) ==================== -->
+    <!-- ==================== FAQ ==================== -->
     <section class="section" id="faq">
       <div class="container">
         
@@ -864,12 +1180,12 @@
         <div class="footer-col">
           <h4>Categorias</h4>
           <ul class="footer-links">
-            <li><a href="#catalogo" onclick="filterCatalog('buques')">Buquês &amp; Arranjos Nobres</a></li>
-            <li><a href="#catalogo" onclick="filterCatalog('noivas')">Coleção Noivas &amp; Casamentos</a></li>
-            <li><a href="#catalogo" onclick="filterCatalog('cestas')">Cestas Especiais &amp; Café</a></li>
-            <li><a href="#catalogo" onclick="filterCatalog('coroas')">Coroas de Homenagem</a></li>
-            <li><a href="#catalogo" onclick="filterCatalog('pelucias')">Kits, Pelúcias &amp; Mimos</a></li>
-            <li><a href="#catalogo" onclick="filterCatalog('orquideas')">Orquídeas &amp; Vasos Vivos</a></li>
+            <li><a href="#buques">Buquês &amp; Arranjos Nobres</a></li>
+            <li><a href="#noivas">Coleção Noivas &amp; Casamentos</a></li>
+            <li><a href="#cestas">Cestas Especiais &amp; Café</a></li>
+            <li><a href="#coroas">Coroas de Homenagem</a></li>
+            <li><a href="#pelucias">Kits, Pelúcias &amp; Mimos</a></li>
+            <li><a href="#orquideas">Orquídeas &amp; Vasos Vivos</a></li>
           </ul>
         </div>
 
@@ -898,6 +1214,6 @@
   </a>
 
   <!-- Script JS -->
-  <script src="./script.js?v=3.0"></script>
+  <script src="./script.js?v=4.0"></script>
 </body>
 </html>
