@@ -1,27 +1,33 @@
 /* ==========================================================================
-   FLORICULTURA ESTAÇÃO DAS FLORES — NOVO LAYOUT DE CATEGORIAS
-   Paleta: Dark Marsala (#1a090d / #280d14), Borgonha (#8a283e), Dourado (#c5a059), Verde WhatsApp (#25d366)
+   FLORICULTURA ESTAÇÃO DAS FLORES — IPATINGA MG
+   Paleta Original: Fundo Claro Marfim (#fffaf8), Marsala Nobre (#521c27 / #8a283e), Dourado (#c5a059), Verde WhatsApp (#25d366)
    ========================================================================== */
 
 :root {
-  --color-dark: #120508;
-  --color-dark-alt: #1a090d;
-  --color-card-bg: #240d13;
-  --color-card-hover: #31111a;
-
-  --color-primary: #8a283e;
-  --color-primary-dark: #521c27;
-  --color-primary-light: #b83a54;
+  /* Cores Principais Originais da Marca */
+  --color-primary: #521c27;
+  --color-primary-dark: #3a111a;
+  --color-primary-light: #8a283e;
+  --color-primary-soft: #fbf2f4;
+  --color-primary-border: #f0d5db;
 
   --color-accent: #c5a059;
-  --color-accent-hover: #dfb66a;
+  --color-accent-hover: #b08a42;
+  --color-accent-light: #fef8ec;
 
   --color-whatsapp: #25d366;
   --color-whatsapp-hover: #20ba59;
 
-  --color-text-main: #ffffff;
-  --color-text-muted: #cbd5e1;
+  /* Fundos Claros Originais */
+  --color-bg: #fffaf8;
+  --color-bg-alt: #fdf4f2;
+  --color-bg-card: #ffffff;
+
+  /* Tipografia */
+  --color-text-main: #1f2937;
+  --color-text-muted: #64748b;
   --color-text-sub: #94a3b8;
+  --color-text-light: #ffffff;
 
   --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -33,9 +39,9 @@
   --radius-xl: 30px;
   --radius-full: 9999px;
 
-  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+  --shadow-sm: 0 2px 10px rgba(82, 28, 39, 0.06);
+  --shadow-md: 0 8px 24px rgba(82, 28, 39, 0.09);
+  --shadow-lg: 0 16px 40px rgba(82, 28, 39, 0.12);
 
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-smooth: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -51,12 +57,11 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  color-scheme: dark;
 }
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-dark);
+  background-color: var(--color-bg);
   color: var(--color-text-main);
   line-height: 1.6;
   overflow-x: hidden;
@@ -103,9 +108,9 @@ button {
 }
 
 .section-alt {
-  background-color: var(--color-dark-alt);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background-color: var(--color-bg-alt);
+  border-top: 1px solid var(--color-primary-border);
+  border-bottom: 1px solid var(--color-primary-border);
 }
 
 .text-center { text-align: center; }
@@ -115,9 +120,10 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(197, 160, 89, 0.15);
-  border: 1px solid var(--color-accent);
-  color: var(--color-accent);
+  background: var(--color-primary-soft);
+  border: 1px solid var(--color-primary-border);
+  color: var(--color-primary);
+  font-family: var(--font-heading);
   font-size: 0.8rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -131,7 +137,7 @@ button {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 3.8vw, 2.8rem);
   font-weight: 800;
-  color: #ffffff;
+  color: var(--color-primary);
   line-height: 1.2;
   margin-bottom: 0.8rem;
 }
@@ -168,24 +174,24 @@ button {
 .btn-primary {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
   color: #ffffff;
-  box-shadow: 0 4px 16px rgba(184, 58, 84, 0.35);
+  box-shadow: 0 4px 16px rgba(82, 28, 39, 0.25);
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(184, 58, 84, 0.55);
+  box-shadow: 0 8px 25px rgba(82, 28, 39, 0.4);
 }
 
 .btn-whatsapp {
   background: linear-gradient(135deg, var(--color-whatsapp) 0%, #16a34a 100%);
   color: #ffffff;
-  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
   font-weight: 800;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 .btn-whatsapp:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
   background: linear-gradient(135deg, var(--color-whatsapp-hover) 0%, #15803d 100%);
 }
 
@@ -201,12 +207,11 @@ button {
 
 /* ==================== ANNOUNCEMENT BAR ==================== */
 .announcement-bar {
-  background: #0d0305;
+  background: var(--color-primary-dark);
   color: #fce7eb;
   padding: 0.55rem 0;
   font-size: 0.84rem;
   font-weight: 600;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 .announcement-content {
   display: flex;
@@ -216,7 +221,7 @@ button {
   flex-wrap: wrap;
 }
 .announcement-link {
-  color: var(--color-accent);
+  color: #ffd4dc;
   font-weight: 700;
   transition: color var(--transition-fast);
 }
@@ -230,10 +235,10 @@ button {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(18, 5, 8, 0.96);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid var(--color-primary-border);
   padding: 0.75rem 0;
   box-shadow: var(--shadow-sm);
 }
@@ -258,7 +263,7 @@ button {
   width: 46px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--color-accent);
+  border: 2px solid var(--color-primary);
 }
 .brand-info {
   display: flex;
@@ -268,7 +273,7 @@ button {
   font-family: var(--font-heading);
   font-size: 1.25rem;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--color-primary);
   line-height: 1.1;
 }
 .brand-sub {
@@ -286,12 +291,12 @@ button {
 .nav-link {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--color-text-muted);
+  color: var(--color-text-main);
   transition: color var(--transition-fast);
   white-space: nowrap;
 }
 .nav-link:hover {
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 .burger {
@@ -305,7 +310,7 @@ button {
   display: block;
   width: 26px;
   height: 2.5px;
-  background: #ffffff;
+  background: var(--color-primary);
   margin: 5px 0;
   border-radius: 2px;
   transition: all var(--transition-fast);
@@ -319,7 +324,7 @@ button {
   min-height: 500px;
   max-height: 680px;
   overflow: hidden;
-  background-color: var(--color-dark);
+  background-color: var(--color-primary-dark);
 }
 
 .slider-wrapper {
@@ -357,7 +362,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(18, 5, 8, 0.9) 0%, rgba(18, 5, 8, 0.7) 50%, rgba(0, 0, 0, 0.3) 100%);
+  background: linear-gradient(90deg, rgba(40, 10, 18, 0.88) 0%, rgba(40, 10, 18, 0.65) 50%, rgba(0, 0, 0, 0.25) 100%);
   z-index: 1;
 }
 
@@ -370,10 +375,10 @@ button {
 
 .slide-kicker {
   display: inline-block;
-  background: rgba(197, 160, 89, 0.25);
+  background: rgba(197, 160, 89, 0.3);
   backdrop-filter: blur(8px);
   border: 1px solid var(--color-accent);
-  color: var(--color-accent);
+  color: #ffffff;
   font-size: 0.82rem;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -393,13 +398,13 @@ button {
 }
 .slide-title em {
   font-style: normal;
-  color: var(--color-accent);
+  color: #ffd4dc;
 }
 
 .slide-desc {
   font-size: 1.12rem;
   line-height: 1.65;
-  color: #e2e8f0;
+  color: #f1f5f9;
   margin-bottom: 2rem;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
@@ -429,9 +434,9 @@ button {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   color: #ffffff;
   font-size: 1.8rem;
   display: flex;
@@ -471,10 +476,15 @@ button {
   border-color: var(--color-accent);
 }
 
-/* ==================== CATEGORIAS SHOWCASE (ESTRUTURA ESKINA FLORES) ==================== */
+/* ==================== CATEGORIAS SHOWCASE (ESTRUTURA CLARA ELEGANTE) ==================== */
 .category-showcase-section {
   padding: 4.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-primary-border);
+}
+
+.category-showcase-section:nth-of-type(even) {
+  background-color: var(--color-bg-alt);
 }
 
 .category-row-layout {
@@ -486,29 +496,30 @@ button {
 
 /* CARD DE DESTAQUE À ESQUERDA */
 .cat-featured-card {
-  background: var(--color-card-bg);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #ffffff;
+  border: 1.5px solid var(--color-primary-border);
   border-radius: var(--radius-lg);
   overflow: hidden;
   position: relative;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-md);
   display: flex;
   flex-direction: column;
   transition: transform var(--transition-smooth);
 }
 .cat-featured-card:hover {
   transform: translateY(-4px);
-  border-color: var(--color-accent);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-lg);
 }
 
 .cat-badge-header {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #a82440 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
   padding: 1.1rem 1rem 1rem;
   text-align: center;
   color: #ffffff;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(82, 28, 39, 0.25);
   z-index: 5;
 }
 .cat-badge-main {
@@ -521,8 +532,8 @@ button {
 .cat-badge-sub {
   display: block;
   font-size: 0.8rem;
-  font-weight: 400;
-  opacity: 0.9;
+  font-weight: 500;
+  opacity: 0.92;
   font-style: italic;
   margin-top: 0.15rem;
 }
@@ -532,7 +543,7 @@ button {
   height: 330px;
   overflow: hidden;
   position: relative;
-  background: #1a080c;
+  background: #fdf2f4;
 }
 .cat-featured-img-wrap img {
   width: 100%;
@@ -572,7 +583,7 @@ button {
   font-family: var(--font-heading);
   font-size: 1.7rem;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--color-primary);
   letter-spacing: 0.02em;
   margin-bottom: 0.5rem;
 }
@@ -600,14 +611,14 @@ button {
   -webkit-overflow-scrolling: touch;
   padding: 0.8rem 0.2rem 1.4rem;
   scrollbar-width: thin;
-  scrollbar-color: var(--color-accent) rgba(255, 255, 255, 0.08);
+  scrollbar-color: var(--color-accent) rgba(82, 28, 39, 0.1);
 }
 
 .cat-carousel-track::-webkit-scrollbar {
   height: 6px;
 }
 .cat-carousel-track::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(82, 28, 39, 0.08);
   border-radius: 9999px;
 }
 .cat-carousel-track::-webkit-scrollbar-thumb {
@@ -618,8 +629,8 @@ button {
 .cat-slide-item {
   flex: 0 0 220px;
   scroll-snap-align: start;
-  background: var(--color-card-bg);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid var(--color-primary-border);
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
@@ -629,7 +640,7 @@ button {
 }
 .cat-slide-item:hover {
   transform: translateY(-5px);
-  border-color: var(--color-accent);
+  border-color: var(--color-primary);
   box-shadow: var(--shadow-md);
 }
 
@@ -637,7 +648,7 @@ button {
   width: 100%;
   height: 200px;
   overflow: hidden;
-  background: #1f0b10;
+  background: #fdf2f4;
 }
 .cat-item-img-wrap img {
   width: 100%;
@@ -654,14 +665,14 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  background: rgba(20, 6, 9, 0.95);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: #ffffff;
+  border-top: 1px solid var(--color-primary-border);
 }
 .cat-item-info h4 {
   font-family: var(--font-heading);
   font-size: 0.92rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-primary);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -695,20 +706,20 @@ button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(18, 5, 8, 0.85);
-  border: 1.5px solid var(--color-accent);
-  color: #ffffff;
+  background: #ffffff;
+  border: 1.5px solid var(--color-primary);
+  color: var(--color-primary);
   font-size: 1.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all var(--transition-fast);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(82, 28, 39, 0.2);
 }
 .carousel-arrow:hover {
-  background: var(--color-accent);
-  color: #000000;
+  background: var(--color-primary);
+  color: #ffffff;
   transform: translateY(-50%) scale(1.1);
 }
 .prev-arrow { left: -18px; }
@@ -723,8 +734,8 @@ button {
 }
 
 .step-card {
-  background: var(--color-card-bg);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid var(--color-primary-border);
   border-radius: var(--radius-md);
   padding: 2.2rem 1.8rem;
   text-align: center;
@@ -733,7 +744,7 @@ button {
 }
 .step-card:hover {
   transform: translateY(-5px);
-  border-color: var(--color-accent);
+  border-color: var(--color-primary);
   box-shadow: var(--shadow-md);
 }
 
@@ -748,7 +759,7 @@ button {
 .step-card h3 {
   font-family: var(--font-heading);
   font-size: 1.25rem;
-  color: #ffffff;
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
 }
 .step-card p {
@@ -779,14 +790,14 @@ button {
 }
 .feature-icon {
   font-size: 1.6rem;
-  color: var(--color-accent);
+  color: var(--color-primary);
   flex-shrink: 0;
   margin-top: 2px;
 }
 .feature-item strong {
   display: block;
   font-size: 1rem;
-  color: #ffffff;
+  color: var(--color-primary);
 }
 .feature-item span {
   font-size: 0.88rem;
@@ -805,7 +816,7 @@ button {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-primary-border);
 }
 .store-main-img {
   width: 100%;
@@ -823,7 +834,7 @@ button {
   height: 120px;
   object-fit: cover;
   border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-primary-border);
 }
 
 /* ==================== AVALIAÇÕES ==================== */
@@ -835,8 +846,8 @@ button {
 }
 
 .review-card {
-  background: var(--color-card-bg);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid var(--color-primary-border);
   border-radius: var(--radius-md);
   padding: 2.2rem;
   display: flex;
@@ -852,7 +863,7 @@ button {
 }
 .review-text {
   font-size: 0.95rem;
-  color: #f1f5f9;
+  color: var(--color-text-main);
   line-height: 1.65;
   font-style: italic;
 }
@@ -861,14 +872,14 @@ button {
   align-items: center;
   gap: 0.8rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 .author-initials {
   width: 42px;
   height: 42px;
-  background: rgba(197, 160, 89, 0.15);
-  border: 1.5px solid var(--color-accent);
-  color: var(--color-accent);
+  background: var(--color-primary-soft);
+  border: 1.5px solid var(--color-primary);
+  color: var(--color-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -879,11 +890,11 @@ button {
 .review-author strong {
   display: block;
   font-size: 0.94rem;
-  color: #ffffff;
+  color: var(--color-primary);
 }
 .review-author span {
   font-size: 0.78rem;
-  color: var(--color-text-sub);
+  color: var(--color-text-muted);
 }
 
 /* ==================== FAQ ==================== */
@@ -896,14 +907,14 @@ button {
 }
 
 .faq-item {
-  background: var(--color-card-bg);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid var(--color-primary-border);
   border-radius: var(--radius-md);
   overflow: hidden;
   transition: all var(--transition-fast);
 }
 .faq-item.active {
-  border-color: var(--color-accent);
+  border-color: var(--color-primary);
   box-shadow: var(--shadow-sm);
 }
 
@@ -915,7 +926,7 @@ button {
   font-family: var(--font-heading);
   font-size: 1.1rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-primary);
   text-align: left;
   display: flex;
   align-items: center;
@@ -948,10 +959,9 @@ button {
 
 /* ==================== FOOTER ==================== */
 .footer {
-  background: #0d0305;
+  background: var(--color-primary-dark);
   color: #ffffff;
   padding: 4.5rem 0 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-grid {
@@ -964,7 +974,7 @@ button {
 .footer-col h4 {
   font-family: var(--font-heading);
   font-size: 1.2rem;
-  color: var(--color-accent);
+  color: #ffd4dc;
   margin-bottom: 1.2rem;
 }
 
@@ -980,7 +990,7 @@ button {
   transition: color var(--transition-fast);
 }
 .footer-links a:hover {
-  color: var(--color-accent);
+  color: #ffffff;
   text-decoration: underline;
 }
 .footer-links span {
@@ -1032,7 +1042,7 @@ button {
     left: -100%;
     width: 100%;
     height: calc(100vh - 68px);
-    background: rgba(18, 5, 8, 0.98);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     flex-direction: column;
@@ -1041,7 +1051,7 @@ button {
     gap: 1.5rem;
     transition: left var(--transition-smooth);
     overflow-y: auto;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--color-primary-border);
     box-shadow: var(--shadow-lg);
   }
   .nav.active {
@@ -1052,7 +1062,7 @@ button {
     font-weight: 700;
     width: 100%;
     padding: 0.4rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
   .nav .nav-cta {
     width: 100%;
@@ -1098,10 +1108,10 @@ button {
   }
 
   .carousel-arrow {
-    display: none; /* Em telas touch, a rolagem suave com o dedo é nativa e fluida */
+    display: none; /* Em telas touch, a rolagem com o dedo é nativa */
   }
   .cat-slide-item {
-    flex: 0 0 175px;
+    flex: 0 0 180px;
   }
   .cat-item-img-wrap {
     height: 165px;
