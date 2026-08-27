@@ -556,10 +556,13 @@ button {
 
 .cat-featured-img-wrap {
   width: 100%;
-  height: 330px;
+  height: 420px;
   overflow: hidden;
   position: relative;
-  background: #fdf2f4;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cat-featured-img-wrap img {
   width: 100%;
@@ -643,7 +646,7 @@ button {
 }
 
 .cat-slide-item {
-  flex: 0 0 220px;
+  flex: 0 0 240px;
   scroll-snap-align: start;
   background: #ffffff;
   border: 1px solid var(--color-primary-border);
@@ -662,9 +665,12 @@ button {
 
 .cat-item-img-wrap {
   width: 100%;
-  height: 200px;
+  height: 260px;
   overflow: hidden;
-  background: #fdf2f4;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cat-item-img-wrap img {
   width: 100%;
@@ -1282,7 +1288,7 @@ button {
     font-size: 0.75rem;
   }
   .cat-featured-img-wrap {
-    height: 250px;
+    height: 360px;
   }
   .cat-featured-btn {
     margin: 0.9rem;
@@ -1308,11 +1314,11 @@ button {
     padding: 0.4rem 0 0.8rem;
   }
   .cat-slide-item {
-    flex: 0 0 155px;
+    flex: 0 0 185px;
     border-radius: var(--radius-sm);
   }
   .cat-item-img-wrap {
-    height: 150px;
+    height: 215px;
   }
   .cat-item-info {
     padding: 0.7rem 0.6rem;
@@ -1393,11 +1399,14 @@ button {
   .slide-title {
     font-size: 1.65rem;
   }
+  .cat-featured-img-wrap {
+    height: 320px;
+  }
   .cat-slide-item {
-    flex: 0 0 142px;
+    flex: 0 0 168px;
   }
   .cat-item-img-wrap {
-    height: 135px;
+    height: 195px;
   }
   .review-slide-card {
     flex: 0 0 90%;
@@ -1406,7 +1415,7 @@ button {
 
 /* Enquadramento Perfeito para Orquídeas (Base do laço e flores superiores) */
 #orquideas .cat-featured-img-wrap img {
-  object-position: center bottom !important;
+  object-position: center center !important;
 }
 #orquideas .cat-item-img-wrap img {
   object-position: center center !important;
