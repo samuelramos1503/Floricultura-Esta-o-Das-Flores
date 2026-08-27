@@ -1421,6 +1421,47 @@ button {
   object-position: center center !important;
 }
 
+
+/* ==================== ENQUADRAMENTO EXTRA-ALTO (+50px a +60px) PARA COROAS DE HOMENAGEM ==================== */
+#coroas .cat-featured-img-wrap {
+  height: 480px;
+}
+#coroas .cat-slide-item {
+  flex: 0 0 255px;
+}
+#coroas .cat-item-img-wrap {
+  height: 315px;
+}
+#coroas .cat-featured-img-wrap img,
+#coroas .cat-item-img-wrap img {
+  object-fit: cover;
+  object-position: center center !important;
+}
+
+@media (max-width: 991px) {
+  #coroas .cat-featured-img-wrap {
+    height: 420px;
+  }
+  #coroas .cat-slide-item {
+    flex: 0 0 195px;
+  }
+  #coroas .cat-item-img-wrap {
+    height: 270px;
+  }
+}
+
+@media (max-width: 380px) {
+  #coroas .cat-featured-img-wrap {
+    height: 380px;
+  }
+  #coroas .cat-slide-item {
+    flex: 0 0 178px;
+  }
+  #coroas .cat-item-img-wrap {
+    height: 250px;
+  }
+}
+
 /* ==================== MONTE SEU PRESENTE PERSONALIZADO (BUILDER) ==================== */
 .builder-card {
   background: #ffffff;
