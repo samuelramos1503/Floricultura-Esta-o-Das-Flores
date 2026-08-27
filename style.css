@@ -1414,11 +1414,33 @@ button {
 }
 
 /* Enquadramento Perfeito para Orquídeas (Base do laço e flores superiores) */
+#orquideas .cat-featured-img-wrap {
+  height: 460px;
+}
 #orquideas .cat-featured-img-wrap img {
-  object-position: center center !important;
+  object-fit: cover;
+  object-position: center 15% !important;
 }
 #orquideas .cat-item-img-wrap img {
   object-position: center center !important;
+}
+
+@media (max-width: 991px) {
+  #orquideas .cat-featured-img-wrap {
+    height: 440px;
+  }
+  #orquideas .cat-featured-img-wrap img {
+    object-position: center 15% !important;
+  }
+}
+
+@media (max-width: 380px) {
+  #orquideas .cat-featured-img-wrap {
+    height: 390px;
+  }
+  #orquideas .cat-featured-img-wrap img {
+    object-position: center 15% !important;
+  }
 }
 
 
